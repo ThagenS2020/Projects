@@ -1,0 +1,20 @@
+﻿<Window x:Class="LibraryAppWPF.TwoPointO"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryAppWPF"
+        mc:Ignorable="d"
+        Title="TwoPointO" Height="450" Width="1100"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label x:Name="lblLibrary" Content="Library Organiser" HorizontalAlignment="Left" Margin="285,10,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Harlow Solid Italic" FontWeight="Bold"/>
+        <Label x:Name="questionLabel" Content="Question" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,64,0,0" FontSize="16" Height="75" Width="1080"/>
+        <RadioButton x:Name="option1" Content="Option 1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,144,0,0" FontSize="15" Height="30" Width="721"/>
+        <RadioButton x:Name="option2" Content="Option 2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,179,0,0" FontSize="15" Height="30" Width="721"/>
+        <RadioButton x:Name="option3" Content="Option 3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,218,0,0" FontSize="15" Height="30" Width="721"/>
+        <RadioButton x:Name="option4" Content="Option 4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,251,0,0" FontSize="15" Height="30" Width="721"/>
+        <Button Content="SUBMIT" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontWeight="Bold" Margin="10,0,0,107"  Width="147" Height="26" Click="Button_Click"/>
+        <Button Content="RETURN" HorizontalAlignment="Left" Margin="10,360,0,0" VerticalAlignment="Top" Width="147" Height="26" FontWeight="Bold" Click="Button_Click_1" />
+    </Grid>
+</Window>

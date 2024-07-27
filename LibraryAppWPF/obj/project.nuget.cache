@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "az9WZHdRCLpyP1htPR3aUHmNahBkvzaYxn/I1fWZToVgpyiNgDXePWwdcOZl1Ea8TWu1mUjZtfBo2ay0roDjOQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\OneDrive\\Documents\\Visual Studio 2022\\LibraryAppWPF\\LibraryAppWPF.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

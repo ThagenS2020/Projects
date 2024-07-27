@@ -1,0 +1,42 @@
+﻿<Window x:Class="LibraryAppWPF.MultiLevelQuiz"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryAppWPF"
+        mc:Ignorable="d"
+        Title="MultiLevelQuiz" Height="450" Width="800"
+          WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Library Organiser" HorizontalAlignment="Left" Margin="296,14,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Harlow Solid Italic" FontWeight="Bold" Grid.ColumnSpan="2" Width="208"/>
+        <Button x:Name="btnExit" Height="33" Width="156" Content="EXIT" FontWeight="Bold" HorizontalAlignment="Left" Margin="244,5,0,0" Grid.Row="2" VerticalAlignment="Top" Click="btnExit_Click"/>
+        <ListView x:Name="listRandom" Grid.Row="1" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="listRandom_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ListView x:Name="listOption" Grid.Column="1" Grid.Row="1" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="listOption_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="btnEnter" Content="ENTER" FontWeight="Bold" Height="33" Width="156" HorizontalAlignment="Left" Margin="44,5,0,0" Grid.Row="2" VerticalAlignment="Top" Click="btnEnter_Click"/>
+        <Button x:Name="btnGame"  FontWeight="Bold" Grid.Column="1" Height="33" Width="156" Content="GAME" HorizontalAlignment="Left" Margin="234,5,0,0" Grid.Row="2" VerticalAlignment="Top" Click="btnGame_Click"/>
+        <Button x:Name="btnTwo" Content="ENTER" FontWeight="Bold" Height="33" Width="156" HorizontalAlignment="Left" Margin="44,10,0,0" Grid.Row="2" VerticalAlignment="Top" Click="btnTwo_Click"/>
+
+
+    </Grid>
+</Window>
