@@ -1,0 +1,340 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.logoNav {
+    width: 30px;
+    height: 30px;
+}
+
+.text-center {
+    margin: 0;
+    /* Ensure there's no margin around the container */
+    padding: 0;
+    /* Ensure there's no padding around the container */
+
+}
+
+.background-image {
+    background-image: url('backG2.png');
+    background-repeat: no-repeat;
+    width:1000px;
+    height: 410px;
+    position: relative;
+    object-fit: cover;
+    zoom: 150%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.containerlabel {
+    background: #be0c29;
+    width:fit-content;
+    height: 160px;
+    position: relative;
+    flex-direction: column;
+    margin-left: -6.8%;
+    box-shadow: 0 -8px 12px -3px rgba(0, 0, 0, 0.7),
+        0 8px 12px -3px rgba(0, 0, 0, 0.7);
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center; /* Center text within each item */
+
+}
+.containerlabel::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* Height of the wave */
+    background: #be0c29; /* Same as the background color of the box */
+    border-radius: 50%;
+    transform: translateY(50%);
+}
+
+.labelsGrey {
+    font-size: 19px;
+    font-style: revert;
+    color: #000000;
+    margin-top: 18%;
+    position: center;
+
+    width: fit-content;
+
+}
+
+.container-wrapper {
+    display: flex;
+    /* Use flexbox layout */
+    margin-top: 0.5%;
+    background-color: white;
+    justify-content: space-between;
+    /* Distribute space between items */
+    width: 100%;
+    
+}
+
+.container-wrapperTwo {
+    display: flex;
+    /* Use flexbox layout */
+    justify-content: space-between;
+    /* Distribute space between items */
+    width: 100%;
+    position: center;
+    align-items:center;
+    background-color: white;
+}
+
+/* Style for the gif container */
+.containerGif {
+    background: #ffffff;
+    width: 50%;
+    /* Adjust width to fit in the parent */
+    height: 370px;
+    /* Fixed height */
+
+}
+
+/* Style for the text container */
+.containerThree {
+    background: #ffffff;
+    width: 75%;
+    /* Adjust width to fit in the parent */
+    height: 220px;
+    /* Fixed height */
+    box-shadow: 0 -8px 12px -3px rgba(0, 0, 0, 0.7), 0 8px 12px -3px rgba(0, 0, 0, 0.7);
+    border-radius: 19px;
+    /* Add border radius for rounded corners */
+   
+}
+
+.textEdit {
+    font-size: 14px;
+    font-style: italic;
+    position: center;
+}
+
+@keyframes flyInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.labels {
+    font-size: 19px;
+    font-style: revert;
+    color: #ffffff;
+    margin-left: 10%;
+    text-align: center;
+    position: center;
+    animation: fadeInFlyInFromLefts 2s ease-out;
+    transition: color 21s ease;
+    width: fit-content;
+}
+
+@keyframes fadeInFlyInFromLefts {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+        /* Start position (fly-in from the left) */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+        /* End position (final position) */
+    }
+}
+.partnerdiv{
+    width: 100%;
+    height: 90px;
+    background-color: white;
+}
+
+.partner {
+    font-size: 30px;
+    font-weight: bold;
+    position: center;
+    margin-left: 6%;
+    background-color: white;
+    margin-top: 5%;
+}
+
+.labelsTwo {
+    font-size: 19px;
+    font-style: revert;
+    color: #ffffff;
+    margin-top: 50px;
+    text-align: center;
+    position: center;
+    animation: fadeInFlyInFromRights 2s ease-out;
+    transition: color 21s ease;
+    width: fit-content;
+    margin-left: 5%;
+}
+@keyframes fadeInFlyInFromRights {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+        /* Start position (fly-in from the left) */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+        /* End position (final position) */
+    }
+}
+.labelTitle {
+    font-size: 27px;
+    font-weight: bold;
+    color: #be0c29;
+    animation: fadeInFlyInFromLeft 2s ease-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes fadeInFlyInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+        /* Start position (fly-in from the left) */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+        /* End position (final position) */
+    }
+}
+
+.logo {
+    position: sticky;
+    width: 20%;
+    height: 50%;
+    animation: fadeInFlyIn 2s ease-out;
+}
+
+@keyframes fadeInFlyIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+        /* Start position (fly-in effect) */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        /* End position (fly-in effect) */
+    }
+}
+
+.iconImages {
+    width: 230px;
+    height: 190px;
+   
+}
+
+.buttonSlide {
+    width: 165px;
+    height: 62px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 1rem;
+    border: none;
+    position: relative;
+    background: #100720;
+    transition: 0.1s;
+}
+
+.buttonSlide::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    /* background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255,94,247,1)17.8%, rgba(2,245,255,1)100.2%);*/
+    filter: blur(15px);
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.buttonSlide:active {
+    transform: scale(0.9)rotate(3deg);
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 94, 247, 1)17.8%, rgba(2, 245, 255, 1)100.2%);
+    transition: 0.5s;
+}
+
+.hoverDiv {
+    width: 250px;
+    position: relative;
+    height: 300px;
+    box-shadow: 0 -8px 12px -3px rgba(0, 0, 0, 0.7), 0 8px 12px -3px rgba(0, 0, 0, 0.7);
+    margin-left: 5%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Add transition for smooth effect */
+}
+
+.hoverDiv:hover {
+    transform: scale(1.05);
+    /* Slight zoom effect */
+    box-shadow: 0 -12px 18px -4px rgba(0, 0, 0, 0.7), 0 12px 18px -4px rgba(0, 0, 0, 0.7);
+    /* Enhanced shadow on hover */
+}
+
+.footer {
+    background: #000000;
+    width: 106.9%;
+    height: 260px;
+    margin-left: -6.8%;
+    margin-top: 5%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6),
+                0 12px 24px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center; /* Center text within each item */
+    position: relative;
+}
+
+.footertext {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    position: center;
+    margin-left: 10%;
+
+}
+
+.footertextTwo {
+    font-size: 14px;
+    font-weight: bold;
+    color: #be0c29;
+    margin-left: 10%;
+
+}
+
+.footertextThree {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-left: 10%;
+
+}
